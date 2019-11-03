@@ -1,0 +1,16 @@
+[[source]]
+verify_ssl = true
+name = "pypi"
+url = "https://pypi.org/simple"
+
+[dev-packages]
+"mock" = ">=1.0.1"
+"pyfakefs" = ">=3.4"
+pyscard = "*"
+
+[packages]
+fido2 = {editable = true,path = "."}
+cryptography = "*"
+
+[scripts]
+test = "python setup.py test"
